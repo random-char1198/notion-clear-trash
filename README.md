@@ -1,7 +1,7 @@
 # notion-clear-trash
 
 A small script to clear the trash from Notion
-
+No python runtime required, just download the software, extract it and enter your token_v2, you are all set!
 ### How to Run the Script
 
 1. Clone the repository
