@@ -8,11 +8,23 @@ No python runtime required, just download the software, extract it and enter you
 ```bash
 git clone git@github.com:random-char1198/notion-clear-trash.git
 ```
-2. Install requirements
+3. install virtualenv
+```bash
+pip3 install virtualenv
+```
+4. create virtual environment
+```bash
+virtualenv -p python3 ./
+```
+5. activate the virtual environment
+```bash
+source ./bin/activate
+```
+6. Install requirements
 ```bash
 pip3 install -r requirements.txt
 ```
-3. Run python script
+7. Run python script
 ```bash
 python3 tk.py
 ```
