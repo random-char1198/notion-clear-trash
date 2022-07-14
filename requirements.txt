@@ -10,7 +10,7 @@ idna>=2.8
 notion>=0.0.23
 python-slugify>=3.0.2
 pytz>=2019.1
-requests>=2.22.0
+requests==2.11.1
 soupsieve>=1.9.2
 text-unidecode>=1.2
 tzlocal>=1.5.1
