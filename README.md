@@ -6,7 +6,7 @@ No python runtime required, just download the software, extract it and enter you
 
 1. Clone the repository
 ```bash
-git clone https://github.com/w4v3s/notion-clear-trash.git
+git clone git@github.com:random-char1198/notion-clear-trash.git
 ```
 2. Install requirements
 ```bash
