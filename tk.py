@@ -2,19 +2,24 @@ from tkinter import *
 from tkinter import messagebox
 import clear as c
 
-
 root = Tk()
 root.geometry("400x400")
+root.title("Notion Clear Trash")
+root.eval('tk::PlaceWindow . center')
 
 
 def clear():
     try:
         token = inputtxt.get(1.0, END).replace('\n', '')
-        client = c.NotionClient(token_v2=token)
-        block_ids = c.get_trash(client)
-        c.delete_permanently(client=client, block_ids=block_ids)
-        print("SUCCESS")
-        messagebox.showinfo(title="Succeeded!", message="Your trash box is cleaned!", )
+        if len(token) == 0:
+            messagebox.showwarning(title="Warning!", message="Your Token v2 is Empty!", )
+
+        else:
+            client = c.NotionClient(token_v2=token)
+            block_ids = c.get_trash(client)
+            c.delete_permanently(client=client, block_ids=block_ids)
+            print("SUCCESS")
+            messagebox.showinfo(title="Succeeded!", message="Your trash box is cleaned!", )
     except Exception as e:
         print(e)
         messagebox.showwarning(title="Warning!", message="Your Token v2 is Wrong!", )
@@ -22,7 +27,7 @@ def clear():
     # print(input_value)
 
 
-l = Label(text="Please Enter your  ")
+l = Label(text="Please Enter your token_v2")
 inputtxt = Text(root, height=10,
                 width=25,
                 bg="light yellow")
