@@ -14,7 +14,7 @@ pip3 install -r requirements.txt
 ```
 3. Run python script
 ```bash
-python3 clear.py
+python3 tk.py
 ```
 
 ### How to Retrieve the Auth Token (in Chrome)
